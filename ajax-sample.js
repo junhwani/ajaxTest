@@ -15,5 +15,14 @@ function drawChart(){
 
   chart.draw(data, {width:800, height:400});
 
-  alert(data);
+  alert(showObj(data));
+}
+
+function showObj(obj){
+  var str = "";
+  for(key in obj){
+    str += key+"="+obj[key]+"\n";
+  }
+
+  return str;
 }
