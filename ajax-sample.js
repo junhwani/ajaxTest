@@ -1,4 +1,4 @@
-google.load('visualization', '1', {'package':['corechart']});
+google.load('visualization', '1', {'packages':['corechart']});
 
 google.setOnLoadCallback(drawChart);
 
