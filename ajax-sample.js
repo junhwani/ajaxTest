@@ -14,4 +14,6 @@ function drawChart(){
   var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
 
   chart.draw(data, {width:800, height:400});
+
+  alert(data);
 }
