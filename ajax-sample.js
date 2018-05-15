@@ -4,8 +4,9 @@ google.setOnLoadCallback(drawChart);
 
 function drawChart(){
   var jsonData = $.ajax({
-    url: "sampleData.json",
+    url: 'http://localhost:8545',
     dataType: "json",
+    data:"sampleData.json",
     async: false
   }).responseText;
 
