@@ -16,7 +16,7 @@ function drawChart(){
 
   chart.draw(data, {width:800, height:400});
 
-  alert(showObj(data));
+  alert(showObj(jsonData));
 }
 
 function showObj(obj){
