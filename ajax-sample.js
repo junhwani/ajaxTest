@@ -1,8 +1,8 @@
-google.load('visualization', '1', {'packages':['corechart']});
+/*google.load('visualization', '1', {'packages':['corechart']});
 
 google.setOnLoadCallback(drawChart);
 
-/*
+
 function drawChart(){
   var jsonData = $.ajax({
     url: 'http://localhost:8545',
