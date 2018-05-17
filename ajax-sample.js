@@ -2,6 +2,7 @@ google.load('visualization', '1', {'packages':['corechart']});
 
 google.setOnLoadCallback(drawChart);
 
+/*
 function drawChart(){
   var jsonData = $.ajax({
     url: 'http://localhost:8545',
@@ -18,6 +19,21 @@ function drawChart(){
 
   alert(showObj(jsonData));
 }
+*/
+
+$(document).ready(function(){
+  $.ajax({
+    type:'GET',
+    dataType:'jsonp',
+    data:"sampleData.json",
+    url: 'http://localhost:8545',
+    jsonp: 'stone',
+    success:function(json){
+      console.log(showObj(json));
+    }
+  });
+});
+
 
 function showObj(obj){
   var str = "";
