@@ -25,7 +25,7 @@ $(document).ready(function(){
   $.ajax({
     type:'GET',
     dataType:'jsonp',
-    data:"sampleData.json",
+    data:{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67},
     url: 'http://localhost:8545',
     jsonp: 'stone',
     success:function(json){
